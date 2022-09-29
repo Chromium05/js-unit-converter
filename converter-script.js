@@ -35,7 +35,7 @@ switch(lang) {
 				var cm2 = parseInt(prompt('Masukkan Unit cm')),
 					inch = convertInch(cm2);
 					
-				alert(cm2 + ' cm = ' + inch + ' inci');
+				alert(cm2 + ' cm = ' + Math.floor(inch)*1 + ' inci');
 			} else if (choice == 3) {
 				var cm3 = parseInt(prompt('Masukkan Unit cm')),
 					mm = convertMili(cm3);
@@ -45,12 +45,12 @@ switch(lang) {
 				var km = parseInt(prompt('Masukkan Unit km')),
 					mil = convertMiles(km);
 					
-				alert(km + ' km = ' + mil + ' mil');
+				alert(km + ' km = ' + Math.floor(mil)*1 + ' mil');
 			} else if (choice == 5) {
 				var m2 = parseInt(prompt('Masukkan Unit m')),
 					ft = convertFeet(m2);
 					
-				alert(m2 + ' m = ' + ft + ' kaki');
+				alert(m2 + ' m = ' + Math.floor(ft)*1 + ' kaki');
 			} else {
 				alert('Input Salah!');
 			}
@@ -73,7 +73,7 @@ switch(lang) {
 				var cm2 = parseInt(prompt('Enter cm Unit')),
 					inch = convertInch(cm2);
 					
-				alert(cm2 + ' cm = ' + inch + ' inch');
+				alert(cm2 + ' cm = ' + Math.floor(inch)*1 + ' inch');
 			} else if (choice == 3) {
 				var cm3 = parseInt(prompt('Enter cm Unit')),
 					mm = convertMili(cm3);
@@ -83,12 +83,12 @@ switch(lang) {
 				var km = parseInt(prompt('Enter km Unit')),
 					mil = convertMiles(km);
 					
-				alert(km + ' km = ' + mil + ' mil');
+				alert(km + ' km = ' + Math.floor(mil)*1 + ' mil');
 			} else if (choice == 5) {
 				var m2 = parseInt(prompt('Enter m Unit')),
 					ft = convertFeet(m2);
 					
-				alert(m2 + ' m = ' + ft + ' ft');
+				alert(m2 + ' m = ' + Math.floor(ft)*1 + ' ft');
 			} else {
 				alert('Wrong Input!');
 			}
